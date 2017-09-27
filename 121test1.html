@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Welcome to AdolfoGarciaSanchez.com</title>
+</head>
+<body style="background-color:lightblue">
+<h1>AdolfoGarciaSanchez.com</h1>
+
+<hr />
+<h4>ABOUT THE TEST</h4>
+
+<p>The test will be approximately 50% conceptual/short-answer and 50% coding questions. In other words, 50% of the test will be devoted to true or false, fill in the black, definitions, short-response questions. The other 50% will be writing code similar to what you do on quizzes (look at quiz #3 for a good example). Expect one question that asks you to explain how to do a simple thing (draw a square, make cereal, tie a shoe, etc). These questions want LOTS of details. Also expect some questions to make you write a function based on pseudocode or to rewrite a given function. My advice is to begin with the conceptual portion first; If you don&#39;t know the answer to something here, skip it and move on to the rest of the conceptual and coding questions. Chances are something will jog your memory later on.</p>
+
+<h4>RESOURCES TO CONSIDER</h4>
+
+<h4><a href="http://eecs.wsu.edu/~aofallon/cpts121/examreviews/exam1review.htm">Exam 1 Review provided by Andy</a></h4>
+
+<p>Andy provides a list of all concepts (click link above) that are fair game on the test. My advice is to go through this list and make sure you know what all of these means and make sure you know how to apply them to code. If you don&#39;t, Google is your friend or review the corresponding class powerpoint slides, or your textbook.</p>
+
+<p><a href="http://eecs.wsu.edu/~aofallon/cpts121/schedule.htm">Andy&#39;s PowerPoint Slides</a></p>
+
+<p>Here is a link to the slides Andy uses for lecture. He will most definitely get answers for conceptual questions from these.</p>
+
+<p style="color:purple"><u>Quizzes! </u></p>
+
+<p>You can find Andy&#39;s answers to the quizzes at the same link where he posts his slides. He will likely also pull from these for the conceptual questions.</p>
+
+<p><a href="http://eecs.wsu.edu/~aofallon/cpts121/syllabus.htm">TA Office Hours</a></p>
+
+<p>Many TAs will be available to answer questions. Check this link to see when their office hours are.</p>
+
+<p style="color:purple"><u>My Office Hours </u></p>
+
+<p>Instead of Friday from 1 - 3 pm, I&#39;ll be at the FIZ Thursday from 5:30 -- 9:30 pm. If you need me outside of these hours, email me with questions or let me know and we&#39;ll discuss a time to meet.<br />
+EMAIL: a.garciasanchez@wsu.edu</p>
+
+<p><a href="http://eecs.wsu.edu/~aofallon/cpts121/schedule.htm">Lab Tasks</a></p>
+
+<p>The Lab tasks we did are excellent practice. Go back and try coding them again from scratch. If you don&#39;t have the time for that, simply go back and look at the task and work through it in your head. I have some answers to the lab tasks. Email me if you want them or go to Office Hours.</p>
+
+<p><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#C%20Programming%20Mock%20Tests">GeeksforGeeks.org</a></p>
+
+<p>Andy tends to get questions from here so this is a good resource to consider.</p>
+
+<p>And, of course, the textbook</p>
+
+<h4>REVIEW QUESTIONS</h4>
+
+<p>As with any coding questions, there are multiple ways to solve a problem. The key is to find the most efficient algorithm. For example, if you needed to write a function that determines if a number is even, you could write LOTS of if statements comparing the number to every even number ever. But obviously, that is not effecient at all. Sample answers are provided to all the questions.</p>
+
+<h5>Question 1</h5>
+
+<p>Write a function called sum_of_odds that returns the sum of only the odd integers passed into the function. The function should accept three integer values as parameters. So if I pass in 12, 3 and 5, the result would be 8. If the integers 12, 4, and 20 are passed in, the result would be zero. ( 5 points)</p>
+
+<p></p>
+
+<p><br />
+<input id="answer1" onclick="showAnswer1()" type="button" value="Show Answer" /> <script>
+     function showAnswer1()
+      {
+      document.getElementById("Answer1").innerHTML = "SAMPLE ANSWER" + "<br/>" + 
+      "int sum_of_odds(int num1, int num2, int num3)" + "<br/>" + 
+      "{" + "<br/>"+ "	int sum = 0;"  + "<br/>" + "<br/>" +
+      "if(num1 % 2 ==1)"+"<br/>"+ 
+      "{" + "<br/>" + "sum = sum + num1;" + "<br/>" + "}" + "<br/>" + "<br/>" +
+      "if(num2 % 2 ==1)"+"<br/>"+ 
+      "{" + "<br/>" + "sum = sum + num2;" + "<br/>" + "}" + "<br/>" + "<br/>" +
+       "if(num3 % 2 ==1)"+"<br/>"+ 
+      "{" + "<br/>" + "sum = sum + num3;" + "<br/>" + "}" + "<br/>" + "<br/>" +
+      "return sum;" + "<br/>" + "}";
+      }
+
+</script></p>
+
+<p></p>
+
+<p id="Answer1"></p>
+
+<h5>Question 2</h5>
+
+<p>Find the errors in the following code (8 total):<br />
+int main void)<br />
+{<br />
+&nbsp;&nbsp;int age == 0;<br />
+&nbsp;&nbsp;print(&quot;Please enter you age: &quot;);<br />
+&nbsp;&nbsp;scanf(&quot;%d&quot;, age);<br />
+&nbsp;&nbsp;if(age =&lt; 20)<br />
+&nbsp;&nbsp;{<br />
+&nbsp;&nbsp;printf(&quot;You are not old enough to consume alcohol&quot;);<br />
+&nbsp;&nbsp;else<br />
+&nbsp;&nbsp;{<br />
+&nbsp;&nbsp;printf(&quot;Congrats! Drink Away!&quot;)<br />
+&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;return ;<br />
+}</p>
+
+<p></p>
+
+<p><br />
+<input id="answer2" onclick="showAnswer2()" type="button" value="Show Answer" /> <script>
+     function showAnswer2()
+      {
+      document.getElementById("Answer2").innerHTML = "-Line 1: Missing first parentheses" + "<br/>" + "-Line 3: age declared wrong; Should be only one '='; Using two is a comparison statement" + "<br/>" + "-Line 4: printf() is spelled wrong" + "<br/>"+ "-Line 5: Missing '&' before age" + "<br/>" + "-Line 6: Comparison Operator is wrong; Should be <= ie 'Less than or equal to'"+"<br/>"+
+"-Line 7: Missing closing bracket for if statement"+"<br/>"+"-Line 11: Missing semicolon at end"+"<br/>"+"-Line 13: return must have a value"+"<br/>";
+      }
+
+</script></p>
+
+<p></p>
+
+<p id="Answer2"></p>
+
+<p></p>
+
+<p></p>
+
+<h5>Question 3</h5>
+
+<p></p>
+
+<p></p>
+
+<p>Analyze the following code and answer the questions:<br />
+<br />
+//Function Declaration<br />
+double getSquare(double x);<br />
+<br />
+int main (void)<br />
+{<br />
+&nbsp;&nbsp;double num1 = 0, num2 = 0;<br />
+&nbsp;&nbsp;num1 = 4;<br />
+&nbsp;&nbsp;num2 = -5;<br />
+&nbsp;&nbsp;num1 = getSquare(num1);<br />
+&nbsp;&nbsp;num2 = getSquare(num2);<br />
+&nbsp;&nbsp;num1 = num1 - num2;<br />
+&nbsp;&nbsp;printf(&quot;%d&quot;, num1);<br />
+}<br />
+<br />
+double getSquare(double x)<br />
+{<br />
+&nbsp;&nbsp; printf(&quot;%d&quot;, x);<br />
+&nbsp;&nbsp; x = x * x;<br />
+&nbsp;&nbsp; return x;<br />
+}</p>
+
+<form action="/action_page.php">What is printed to the screen at line 5 of main()?<br />
+<input id="line5" name="line5" type="text" /><br />
+What is printed to the screen at line 6 of main()?<br />
+<input id="line6" name="line6" type="text" /><br />
+What is the value of num1 at line 8 of main()?<br />
+<input id="finalLine" name="finalLine" type="text" />
+<p id="result">Answer will appear here</p>
+<input id="btn" onclick="getAnswer()" type="button" value="Submit" /></form>
+
+
+<script>
+
+
+function getAnswer()
+{
+
+     var success = 0;
+     var answer = 0;
+     answer = document.getElementById("line5").value;
+     if(answer == 4)
+     { success ++;}
+      answer = document.getElementById("line6").value;
+     if(answer == -5)
+     { success ++;}
+     answer = document.getElementById("finalLine").value;
+     if(answer == -9)
+     { success++;}
+     if (success == 3)
+     {
+        document.getElementById("result").innerHTML = "Congrats! All correct!";
+     }
+
+     else {document.getElementById("result").innerHTML = "Not quite. Try again";}
+}
+</script>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+</body>
+</html>
