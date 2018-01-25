@@ -1,0 +1,42 @@
+/*
+PA8 Rubric:
+10 pts - my_str_n_cat(): accepts pointer to a destination character 
+array and a pointer to a source character array (which is assumed
+ to be a string) and returns the pointer to the destination character array. 
+This function needs to copy at most n characters, character by character, 
+from the source character array to the end of the destination character array. 
+If a null character is encountered before n characters have been encountered, 
+copying must stop. 
+You may NOT use any functions found in <string.h> to solve this problem! Note: you MUST use pointer arithmetic in this function only. 
+
+10 pts - Binary Search: Input: a list of n sorted integer values and a target value
+Output: True if target value exists in list and location of target value, false otherwise
+
+20 pts - bubble_sort():  accepts an array of pointers to strings
+and the number of strings as arguments, and returns nothing. The function sorts 
+the strings according to the following algorithm
+
+15 pts - is_palindrome: that accepts a pointer to a string and its length, 
+and recursively determines if the string is a palindrome.
+The function must return 1 for a palindrome, 0 otherwise. 
+
+20 pts - sum_primes(): unsigned integer, n, as an argument,
+ and returns the sum of all primes from 2 to n
+
+25 pts - max_occurences(): that accepts a pointer to a string
+ (consisting of alphanumeric and whitespace characters only), a pointer 
+to an array of struct occurrences,  a pointer to an integer, and a 
+pointer to a character as arguments. determines the frequency of each 
+character found in the array.
+
+5 pts - Comments and everything else
+
+BONUS: 20 pts - max_consecutive_integers(): accepts a two-dimensional array of 
+signed integers, the number of rows, the number of columns as input parameters,
+ and two pointers as output parameters (one of these pointers is actually 
+a pointer to a pointer, i.e. two stars!).
+
+TOTAL: 100
+*/
+
+ 
